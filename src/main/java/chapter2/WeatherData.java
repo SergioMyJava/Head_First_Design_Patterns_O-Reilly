@@ -26,7 +26,7 @@ public class WeatherData implements Subject {
     public void notifyObserver() {
         for(int i=0;i<arrayObservers.size();i++){
             Observer o=(Observer)arrayObservers.get(i);
-            o.update();
+            o.update(temperature,humidity);
         }
     }
 
@@ -38,7 +38,6 @@ public class WeatherData implements Subject {
         this.temperature = temperature;
         this.humidity = humidity;
         this.pressure = pressure;
-        measurementsChanged();                                                      // почему бы нам тут не вызывать метод otifyObserver()
+        measurementsChanged();                                                      // почему бы нам тут не вызывать метод notifyObserver()
     }                                                                               // зачем промежуточный метод measurementsChanged()
-
 }

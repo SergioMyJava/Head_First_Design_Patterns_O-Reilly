@@ -7,6 +7,7 @@ public class StatisticsDisplay implements Observer,DisplayElement {
 
     StatisticsDisplay(Subject weatherData){
         this.weatherData = weatherData;
+        weatherData.addObserver(this);
     }
 
     public void update(float temperature, float humidity) {
