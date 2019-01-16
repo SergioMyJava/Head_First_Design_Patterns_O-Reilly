@@ -6,5 +6,6 @@ public class MiniDuckSimulator {
         mallard.performQuack();
         mallard.setPerformFly(new FlyRocketPowered());
         mallard.performFly();
+
     }
 }
