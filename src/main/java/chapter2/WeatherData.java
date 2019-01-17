@@ -3,7 +3,7 @@ package chapter2;
 import java.util.ArrayList;
 
 public class WeatherData implements Subject {
-    private ArrayList arrayObservers;
+    private ArrayList<Observer> arrayObservers;
     private float temperature;
     private float humidity;
     private float pressure;
@@ -25,7 +25,7 @@ public class WeatherData implements Subject {
 
     public void notifyObserver() {
         for(int i=0;i<arrayObservers.size();i++){
-            Observer o=(Observer)arrayObservers.get(i);
+            Observer o=arrayObservers.get(i);
             o.update(temperature,humidity);
         }
     }
@@ -38,6 +38,6 @@ public class WeatherData implements Subject {
         this.temperature = temperature;
         this.humidity = humidity;
         this.pressure = pressure;
-        measurementsChanged();                                                      // почему бы нам тут не вызывать метод notifyObserver()
-    }                                                                               // зачем промежуточный метод measurementsChanged()
+        measurementsChanged();
+    }
 }

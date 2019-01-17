@@ -16,6 +16,7 @@ public class StatisticsDisplay implements Observer,DisplayElement {
     }
 
     public void display() {
-        System.out.print("The temperature is a " + temperature + " ,the humidity is " + humidity );
+        System.out.println("Current conditions: " + temperature
+                + "F degrees and " + humidity + "% humidity" );
     }
 }
