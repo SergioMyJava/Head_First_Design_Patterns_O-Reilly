@@ -1,19 +1,17 @@
 package chapter3;
 
 public class Mocha extends CondimentDecorator {
-    Baverage baverage;
+    Beverage beverage;
 
-    Mocha(Baverage baverage){
-        this.baverage = baverage;
+    public Mocha(Beverage beverage) {
+        this.beverage = beverage;
     }
 
-    @Override
     public String getDescription() {
-        return baverage.getDiskription() + " Mocha ";
+        return beverage.getDescription() + " Mocha ";
     }
 
-    @Override
-    public double coast() {
-        return 0.20 + baverage.coast();
+    public double cost() {
+        return .20 + beverage.cost();
     }
 }

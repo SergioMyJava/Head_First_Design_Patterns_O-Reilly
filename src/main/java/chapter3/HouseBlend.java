@@ -1,13 +1,10 @@
 package chapter3;
 
-public class HouseBlend extends Baverage{
-
-    HouseBlend(){
-        description = "HouseBlend";
+public class HouseBlend extends Beverage {
+    public HouseBlend() {
+        description = "House Blend Coffee";
     }
-
-    @Override
-    public double coast() {
-        return 0.89;
+    public double cost() {
+        return .89;
     }
 }

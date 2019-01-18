@@ -1,20 +1,17 @@
 package chapter3;
 
 public class Soy extends CondimentDecorator{
-    Baverage baverage;
+    Beverage beverage;
 
-    Soy(Baverage baverage){
-        this.baverage = baverage;
+    public Soy(Beverage beverage) {
+        this.beverage = beverage;
     }
 
-
-    @Override
     public String getDescription() {
-        return baverage.getDiskription() + "Soy";
+        return beverage.getDescription() + " Soy ";
     }
 
-    @Override
-    public double coast() {
-        return 0.23 + baverage.coast();
+    public double cost() {
+        return .20 + beverage.cost();
     }
 }

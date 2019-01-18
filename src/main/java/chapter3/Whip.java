@@ -1,19 +1,18 @@
 package chapter3;
 
 public class Whip extends CondimentDecorator{
-    Baverage baverage;
+    Beverage beverage;
 
-    Whip(Baverage baverage){
-        this.baverage = baverage;
+    public Whip(Beverage beverage) {
+        this.beverage = beverage;
     }
 
-    @Override
     public String getDescription() {
-        return baverage.getDiskription() + "Whip";
+        return beverage.getDescription() + " Whip ";
     }
 
-    @Override
-    public double coast() {
-        return 0.10 + baverage.coast();
+    public double cost() {
+        return .20 + beverage.cost();
     }
 }
+
