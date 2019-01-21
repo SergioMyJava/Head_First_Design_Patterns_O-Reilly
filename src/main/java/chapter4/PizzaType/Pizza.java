@@ -7,8 +7,6 @@ import chapter4.PizzaIngredients.Pepperoni.Pepperoni;
 import chapter4.PizzaIngredients.Sauce.Sauce;
 import chapter4.PizzaIngredients.Veggies.Veggies;
 
-import java.util.ArrayList;
-
 public abstract class Pizza {
     String name;
     Dough dough;

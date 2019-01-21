@@ -9,7 +9,7 @@ public class Application {
 
     public static void main(String[] args){
         PizzaStore myPizza = new NYPizzaStore();
-        Pizza pizza = myPizza.orderPizza("cheese");
+        Pizza pizza = myPizza.orderPizza("veggie");
 
         System.out.print("I'am ordered " + pizza.getName());
     }
