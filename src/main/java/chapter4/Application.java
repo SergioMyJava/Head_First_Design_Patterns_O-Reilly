@@ -1,9 +1,8 @@
 package chapter4;
 
-import chapter4.PizzaType.Pizza;
-import chapter4.Store.CaliforniaPizzaStore;
-import chapter4.Store.NYPizzaStore;
-import chapter4.Store.PizzaStore;
+import chapter4.pizzatype.Pizza;
+import chapter4.store.NYPizzaStore;
+import chapter4.store.PizzaStore;
 
 public class Application {
 
