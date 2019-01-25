@@ -15,7 +15,6 @@ public class SimpleRemoteControl {
         for (int i = 0; i < 7; i++) {
             onCommand[i] = noCommand;
             offCommand[i] = noCommand;
-            undoCommand = noCommand;
         }
     }
 

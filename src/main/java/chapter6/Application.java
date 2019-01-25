@@ -38,7 +38,7 @@ public class Application {
         CeilingFanOffCommand fanOFFCommand = new CeilingFanOffCommand(celingFan);
 
         //присваиваем кнопкам команды вкл или выкл
-        simpleRemoteControl.setCommand(0,()->{GarageDoor.up();},()->{GarageDoor.down();});
+        simpleRemoteControl.setCommand(0,garageDoorOpenCommand,garageDoorCloseCommand);
         simpleRemoteControl.setCommand(1,lightOnCommand,noCommand);
         simpleRemoteControl.setCommand(2,securityControlOn,securityControlOff);
         simpleRemoteControl.setCommand(3,stereoOnWithCDCommand,srereoOffCommand);
