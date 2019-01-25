@@ -15,7 +15,10 @@ public class ApplicationLambda {
         remoteControl.setCommand(0, ()->{livingRoomLight.on();}, ()->{livingRoomLight.off();});//почему то лямбда не работатет
         remoteControl.setCommand(1, kitchenLight::on, kitchenLight::off);// я так понимаю эта запись типо лямбда то-же самое
 
-
+        remoteControl.onButtonPressed(0);
+        remoteControl.offButtonPressed(0);
+        remoteControl.onButtonPressed(1);
+        remoteControl.offButtonPressed(1);
 
     }
 }
