@@ -23,6 +23,7 @@ public class Application {
         test(adapter);
 
     }
+
     public  static void test(Duck duck){
         duck.squack();
         duck.fly();
