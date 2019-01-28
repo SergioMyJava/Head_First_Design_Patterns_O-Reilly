@@ -1,4 +1,4 @@
-package chapter6.CommandClass;
+package chapter6.commandClass;
 
 import chapter6.device.Stereo;
 
@@ -14,7 +14,7 @@ public class StereoOffCommand implements Command{
         stereo.off();
     }
 
-    @Override
+
     public void undo() {
         stereo.on();
     }

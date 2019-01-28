@@ -1,4 +1,4 @@
-package chapter6.CommandClass;
+package chapter6.commandClass;
 
 import chapter6.device.GarageDoor;
 
@@ -14,7 +14,7 @@ public class GarageDoorOpenCommand implements Command {
         garageDoor.up();
     }
 
-    @Override
+
     public void undo() {
         garageDoor.down();
     }

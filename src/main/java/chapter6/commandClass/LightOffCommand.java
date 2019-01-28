@@ -1,4 +1,4 @@
-package chapter6.CommandClass;
+package chapter6.commandClass;
 
 import chapter6.device.Light;
 
@@ -14,7 +14,7 @@ public class LightOffCommand implements Command{
         light.off();
     }
 
-    @Override
+
     public void undo() {
         light.on();
     }

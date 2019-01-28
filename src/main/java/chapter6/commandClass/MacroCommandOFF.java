@@ -1,4 +1,4 @@
-package chapter6.CommandClass;
+package chapter6.commandClass;
 
 public class MacroCommandOFF implements Command {
     Command[] manyCommandOFF;
@@ -14,7 +14,7 @@ public class MacroCommandOFF implements Command {
         }
     }
 
-    @Override
+
     public void undo() {
 
     }

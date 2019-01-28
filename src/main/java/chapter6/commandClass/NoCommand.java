@@ -1,4 +1,4 @@
-package chapter6.CommandClass;
+package chapter6.commandClass;
 
 public class NoCommand implements Command{
     @Override
@@ -6,7 +6,7 @@ public class NoCommand implements Command{
         System.out.println(" No Command ");
     }
 
-    @Override
+
     public void undo() {
         System.out.println(" No Command ");
     }

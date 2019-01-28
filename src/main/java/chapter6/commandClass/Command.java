@@ -1,6 +1,6 @@
-package chapter6.CommandClass;
+package chapter6.commandClass;
 
 public interface Command {
     void execute();
-    void undo();
+
 }

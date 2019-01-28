@@ -1,4 +1,4 @@
-package chapter6.CommandClass;
+package chapter6.commandClass;
 
 import chapter6.device.SecurityControl;
 
@@ -14,7 +14,7 @@ public class SecurityControlOff implements Command{
         securityControl.off();
     }
 
-    @Override
+
     public void undo() {
         securityControl.on();
     }

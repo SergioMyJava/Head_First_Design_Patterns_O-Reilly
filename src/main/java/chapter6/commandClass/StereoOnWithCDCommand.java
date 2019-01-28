@@ -1,4 +1,4 @@
-package chapter6.CommandClass;
+package chapter6.commandClass;
 
 import chapter6.device.Stereo;
 
@@ -16,7 +16,7 @@ public class StereoOnWithCDCommand implements Command {
         stereo.setVolume(11);
     }
 
-    @Override
+
     public void undo() {
         stereo.off();
     }

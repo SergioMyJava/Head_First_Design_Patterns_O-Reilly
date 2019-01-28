@@ -1,6 +1,6 @@
 package chapter6;
 
-import chapter6.CommandClass.*;
+import chapter6.commandClass.*;
 import chapter6.controller.SimpleRemoteControl;
 import chapter6.device.*;
 
@@ -12,7 +12,7 @@ public class Application {
         SimpleRemoteControl simpleRemoteControl = new SimpleRemoteControl();
         SecurityControl securityControl = new SecurityControl();
         Stereo stereo = new Stereo("Stereo in dining room");
-        Light light = new Light();
+        Light light = new Light("Light in dining room");
         GarageDoor garageDoor = new GarageDoor();
         CeilingFan celingFan = new CeilingFan("Living room");
 

@@ -1,4 +1,4 @@
-package chapter6.CommandClass;
+package chapter6.commandClass;
 
 import chapter6.device.CeilingFan;
 
@@ -16,7 +16,7 @@ public class CeilingFanHighCommand implements Command{
         ceilingFan.high();
     }
 
-    @Override
+
     public void undo() {
         if (prevSpeed == CeilingFan.HIGH) {
             ceilingFan.high();
