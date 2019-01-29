@@ -1,6 +1,5 @@
 package chapter9.menuwithiterator;
 
-import java.awt.*;
 import java.util.Iterator;
 
  public class DinerMenuIterator implements Iterator {
@@ -18,8 +17,8 @@ import java.util.Iterator;
     }
 
     public boolean hasNext() {
-        if (position >= items.length || items[position] == null) { //откуда сдесь position возмется, по коду он всегда = 0;
-            return false;                                          //а метод next вызывается в коде после hasNext
+        if (position >= items.length || items[position] == null) {
+            return false;
         } else {
             return true;
         }

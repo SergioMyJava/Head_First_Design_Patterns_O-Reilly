@@ -1,6 +1,5 @@
 package chapter9.menuwithiterator;
 
-import java.awt.*;
 import java.util.Iterator;
 
 public class DinerMenu {
@@ -23,7 +22,7 @@ public class DinerMenu {
     }
 
     public void addItem(String name, String description,boolean vegetarian, double price) {
-        MenuItem menuItem = new MenuItem(name, description, vegetarian, price);                   //тут не компилится
+        MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
         if (numberOfItems >= MAX_ITEMS) {
             System.err.println("Sorry, menuwithoutiterator is full! Can’t add item to menuwithoutiterator");
         } else {

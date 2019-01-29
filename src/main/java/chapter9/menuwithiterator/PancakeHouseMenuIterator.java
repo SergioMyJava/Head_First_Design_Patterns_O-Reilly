@@ -1,6 +1,5 @@
 package chapter9.menuwithiterator;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 
