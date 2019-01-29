@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fba37bd-6808-4af3-b3e7-817d0fbaa792" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gitignor.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chapter8/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chapter8/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chapter8/CaffeineBeverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chapter8/CaffeineBeverage/CaffeineBeverage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chapter8/Coffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chapter8/CaffeineBeverage/Coffee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chapter8/Tea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chapter8/CaffeineBeverage/Tea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chapter8/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chapter8/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chapter8/CaffeineBeverage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chapter8/Coffee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chapter8/Tea.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignor" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -171,14 +162,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="HeadFirst" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HeadFirst" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter8" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -189,7 +172,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548682215452" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548744924690" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Head-First-Design-Patterns-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -331,18 +314,17 @@
       <workItem from="1548615665128" duration="595000" />
       <workItem from="1548656675060" duration="6967000" />
       <workItem from="1548682448896" duration="10557000" />
-      <workItem from="1548743077649" duration="587000" />
+      <workItem from="1548743077649" duration="1100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156199000" />
+    <option name="totallyTimeSpent" value="156712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17069486" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17069486" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
