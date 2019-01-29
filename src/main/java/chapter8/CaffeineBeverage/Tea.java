@@ -1,4 +1,4 @@
-package chapter8;
+package chapter8.CaffeineBeverage;
 
 public class Tea extends CaffeineBeverage {
 

@@ -1,4 +1,4 @@
-package chapter8;
+package chapter8.CaffeineBeverage;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,8 +18,8 @@ public class Coffee extends CaffeineBeverage {
     @Override
     boolean customerWantsCondiments() {
         String answer = getUserInput();
-        if (answer.toLowerCase().startsWith("y")) { // <--Леша объясни что тут происходит я теряюсь в обилии классов и
-            return true;                            //Методов по которым тут прыгают ссылки и не понятно что каждый метод делает
+        if (answer.toLowerCase().startsWith("y")) {
+            return true;
         } else {
             return false;
         }
