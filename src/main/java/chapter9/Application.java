@@ -1,14 +1,21 @@
 package chapter9;
 
-import chapter9.menuwithiterator.DinerMenu;
-import chapter9.menuwithiterator.PancakeHouseMenu;
-import chapter9.menuwithiterator.Waitress;
+import chapter9.menuwithiterator.*;
+
+import java.util.ArrayList;
 
 public class Application {
     public static void main(String[] args){
         DinerMenu dinerMenu = new DinerMenu();
         PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
-        Waitress nill = new Waitress(pancakeHouseMenu,dinerMenu);
+        CafeMenu cafeMenu = new CafeMenu();
+
+        ArrayList<Menu> menu = new ArrayList<>();
+        menu.add(dinerMenu);
+        menu.add(pancakeHouseMenu);
+        menu.add(cafeMenu);
+
+        Waitress nill = new Waitress(menu);
         nill.printMenu();
     }
 }

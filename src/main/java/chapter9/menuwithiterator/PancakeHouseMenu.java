@@ -3,7 +3,7 @@ package chapter9.menuwithiterator;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class PancakeHouseMenu {
+public class PancakeHouseMenu implements Menu{
     ArrayList<MenuItem> menuItems;
 
     public PancakeHouseMenu() {
@@ -21,13 +21,11 @@ public class PancakeHouseMenu {
                 "Waffles, with your choice of blueberries or strawberries",true,3.59);
     }
 
-    public void addItem(String name, String description,boolean vegetarian, double price)
-    {
+    public void addItem(String name, String description,boolean vegetarian, double price){
         MenuItem menuItem = new MenuItem(name, description, vegetarian, price);    //тут не компилится
         menuItems.add(menuItem);
     }
 
-    public Iterator createIterator() {
-        return new PancakeHouseMenuIterator(menuItems);
-    }
+    @Override
+    public Iterator createIterator(){ return menuItems.iterator(); }
 }
