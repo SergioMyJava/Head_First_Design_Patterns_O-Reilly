@@ -1,5 +1,7 @@
 package chapter9.composite;
 
+import java.util.Iterator;
+
 public class MenuItem extends MenuComponent{
     String name;
     String description;
@@ -30,5 +32,10 @@ public class MenuItem extends MenuComponent{
         if(isVegetarian()){System.out.println(" V ");}
         System.out.println(", " + getDescription());
         System.out.println("    -- " + getPrice());
+    }
+
+    @Override
+    public Iterator<MenuComponent> createIterator() {
+        return null;
     }
 }
