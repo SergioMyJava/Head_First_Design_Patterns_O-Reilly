@@ -1,7 +1,7 @@
 Паттерн Состояние(State) - управляет изменением поведения объекта при изменении его внутреннего состояния. Внешне
 это выглядит так, словно объект меняет свой класс.
 
-[схема](image10.jpg)
+![изображение image10](https://github.com/SergioMyJava/Head-First/blob/master/src/main/java/chapter10/gumballmachine/image10.jpg)
 
 Пояснение:
 
