@@ -1,12 +1,14 @@
 package chapter10;
 
-import chapter10.gumballmachine.GumbullMachine;
+
+import chapter10.gumballmachine.GumballMachine;
 
 public class Application {
     public static void main(String[] args){
 
-        GumbullMachine test = new GumbullMachine(10);
+        GumballMachine test = new GumballMachine(10);
 
+        System.out.println(test);
         test.insertQuarter();
         test.turnCrank();
         System.out.println(" ");

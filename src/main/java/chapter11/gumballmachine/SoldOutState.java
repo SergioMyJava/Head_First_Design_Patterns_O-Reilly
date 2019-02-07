@@ -1,4 +1,4 @@
-package chapter10.gumballmachine;
+package chapter11.gumballmachine;
 
 public class SoldOutState implements State {
     GumballMachine gumballMachine;

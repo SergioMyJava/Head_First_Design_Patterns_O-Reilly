@@ -1,21 +1,25 @@
-package chapter10.gumballmachine;
+package chapter11.gumballmachine;
 
-public class GumbullMachine {
+public class GumballMachine {
     State soldOutState;
     State noQuarterState;
     State hasQuarterState;
     State soldState;
     State winnerState;
+    GumballMonitor gumballMonitor;
+    String location;
 
     State state;
     int count = 0;
 
-    public GumbullMachine(int numberGumballs) {
+    public GumballMachine(String location,int numberGumballs) {
+        this.location = location;
         soldOutState = new SoldOutState(this);
         noQuarterState = new NoQuarterState(this);
         hasQuarterState = new HasQuarterState(this);
         soldState = new SoldState(this);
         winnerState = new WinnerState(this);
+        gumballMonitor = new GumballMonitor(this);
         this.count = numberGumballs;
         if (numberGumballs > 0) {
             state = noQuarterState;
@@ -72,8 +76,12 @@ public class GumbullMachine {
         return winnerState;
     }
 
+    String getLocation(){return location;}
+
+    State getState(){return state;}
+
     public String toString(){
-        return "Count " + getCount() ;
+        return "GumballMachine " + getCount() + getState() + getLocation();
     }
 
     void refill(int count) {
