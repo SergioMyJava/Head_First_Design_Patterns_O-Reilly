@@ -17,5 +17,7 @@ public class Application {
 
         Waitress nill = new Waitress(menu);
         nill.printMenu();
+
+        ArrayList list = new ArrayList();
     }
 }
