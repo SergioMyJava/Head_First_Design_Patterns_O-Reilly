@@ -28,10 +28,11 @@ public class ServerApplication {
         Remote stub = UnicastRemoteObject.exportObject(gumballMachine, 0);//создание "заглушки" – приемника удаленных вызовов
                                                                                //вверху определение из книги мое -готовим объект к передаче
         registry.bind(UNIC_BINDING_NAME, stub);//регистрация "заглушки" в реесте
-                                               //мое - передаем объект
+                                               //мое определение - передаем объект
         Thread.sleep(Integer.MAX_VALUE);//усыпляем главный поток, иначе программа завершится
 
         /*
+        код из книги
         GumballMachineRemote gumballMachine = null;
         int count;
         if (args.length < 2) {
