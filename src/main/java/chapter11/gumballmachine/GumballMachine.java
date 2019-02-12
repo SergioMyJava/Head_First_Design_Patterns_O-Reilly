@@ -3,7 +3,7 @@ package chapter11.gumballmachine;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
-public class GumballMachine extends UnicastRemoteObject implements GumballMachineRemote {
+public class GumballMachine implements GumballMachineRemote {
     private static final long serialVersionUID = 2L;
     State soldOutState;
     State noQuarterState;
