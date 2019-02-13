@@ -3,16 +3,20 @@ package chapter11.imageproxy;
 import javax.swing.*;
 import java.awt.*;
 
-public class ImageComponent extends Component {
+public class ImageComponent extends JComponent {
+
     private Icon icon;
-    public ImageComponent(Icon icon) {
+
+    ImageComponent(Icon icon) {
         this.icon = icon;
     }
-    public void setIcon(Icon icon) {
+
+    void setIcon(Icon icon) {
         this.icon = icon;
     }
+
     public void paintComponent(Graphics g) {
-        super.paint(g);
+        super.paintComponent(g);
         int w = icon.getIconWidth();
         int h = icon.getIconHeight();
         int x = (800 - w)/2;
