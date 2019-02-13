@@ -1,17 +1,14 @@
 package chapter11;
 
-import chapter11.gumballmachine.GumballMachine;
 import chapter11.gumballmachine.GumballMachineRemote;
 import chapter11.gumballmachine.GumballMonitor;
-
-import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
 public class ClientApplication {
-    public static final String UNIC_BINDING_NAME = "gumballMachine";
+    public static final String UNIC_BINDING_NAME = "serverApp";
 
     public static void main(String[] args) throws RemoteException, NotBoundException {
 

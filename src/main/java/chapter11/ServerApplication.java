@@ -5,7 +5,6 @@ import chapter11.gumballmachine.GumballMachineRemote;
 
 
 import java.rmi.AlreadyBoundException;
-import java.rmi.Naming;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
@@ -13,7 +12,7 @@ import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 
 public class ServerApplication {
-    public static final String UNIC_BINDING_NAME = "gumballMachine";
+    public static final String UNIC_BINDING_NAME = "serverApp";
 
     public static void main(String[] args) throws RemoteException, AlreadyBoundException, InterruptedException {
         GumballMachineRemote gumballMachine = null;
@@ -21,6 +20,7 @@ public class ServerApplication {
 
         count = Integer.parseInt(args[1]);
         gumballMachine = new GumballMachine(args[0], count);//создаем 1 машину скоторй будем работать удаленно
+
 
         final Registry registry = LocateRegistry.createRegistry(2099);//создаем реестр открытых для доступа
         // объектов(так написано в объяснении, но как я понимаю указываем порт для связи, еще IP может указываться перед портом)
