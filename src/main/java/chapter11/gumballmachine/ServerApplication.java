@@ -1,4 +1,4 @@
-package chapter11;
+package chapter11.gumballmachine;
 
 import chapter11.gumballmachine.GumballMachine;
 import chapter11.gumballmachine.GumballMachineRemote;

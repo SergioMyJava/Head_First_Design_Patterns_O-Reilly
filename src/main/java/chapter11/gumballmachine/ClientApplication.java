@@ -1,7 +1,5 @@
-package chapter11;
+package chapter11.gumballmachine;
 
-import chapter11.gumballmachine.GumballMachineRemote;
-import chapter11.gumballmachine.GumballMonitor;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
