@@ -5,11 +5,13 @@ import java.awt.*;
 import javax.swing.*;
 
 public class ImageProxy implements Icon {
-    volatile ImageIcon imageIcon;
-    final URL imageURL;
-    Thread retrievalThread;
-    boolean retrieving = false;
-    public ImageProxy(URL url) { imageURL = url; }
+
+    ImageProxy(URL url) { imageURL = url; }
+
+    private volatile ImageIcon imageIcon;
+    private final URL imageURL;
+    private boolean retrieving = false;
+
     public int getIconWidth() {
         if (imageIcon != null) {
             return imageIcon.getIconWidth();
@@ -17,6 +19,7 @@ public class ImageProxy implements Icon {
             return 800;
         }
     }
+
     public int getIconHeight() {
         if (imageIcon != null) {
             return imageIcon.getIconHeight();
@@ -24,9 +27,11 @@ public class ImageProxy implements Icon {
             return 600;
         }
     }
+
     synchronized void setImageIcon(ImageIcon imageIcon) {
         this.imageIcon = imageIcon;
     }
+
     public void paintIcon(final Component c, Graphics g, int x, int y) {
         if (imageIcon != null) {
             imageIcon.paintIcon(c, g, x, y);
@@ -34,14 +39,12 @@ public class ImageProxy implements Icon {
             g.drawString("Loading CD cover, please wait...", x+300, y+190);
             if (!retrieving) {
                 retrieving = true;
-                retrievalThread = new Thread(new Runnable() {
-                    public void run() {
-                        try {
-                            setImageIcon(new ImageIcon(imageURL, "CD Cover"));
-                            c.repaint();
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
+                Thread retrievalThread = new Thread(() -> {
+                    try {
+                        setImageIcon(new ImageIcon(imageURL, "CD Cover"));
+                        c.repaint();
+                    } catch (Exception e) {
+                        e.printStackTrace();
                     }
                 });
                 retrievalThread.start();
