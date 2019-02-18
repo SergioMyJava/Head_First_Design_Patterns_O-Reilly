@@ -5,10 +5,7 @@ import java.awt.*;
 import javax.swing.*;
 
 public class ImageProxy implements Icon {
-<<<<<<< HEAD:SRC/main/java/chapter11/imageproxy/ImageProxy.java
-=======
 
->>>>>>> f4c4b140de47ea773cc497ccdad3a88eaf585867:src/main/java/chapter11/imageproxy/ImageProxy.java
     ImageProxy(URL url) { imageURL = url; }
 
     private volatile ImageIcon imageIcon;

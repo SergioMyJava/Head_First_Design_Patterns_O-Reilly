@@ -11,10 +11,6 @@ public class MatchMakingTestDrive {
     test.drive();
   }
 
-    //public MatchMakingTestDrive() {
-      //  initializeDatabase();
-    //}
-
     public void drive() {
         PersonBean joe = new PersonBeanImpl("Joe Javabean","man","stamps",11);
 
