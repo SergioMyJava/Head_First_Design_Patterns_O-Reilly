@@ -60,7 +60,7 @@ public class DJViewServlet extends HttpServlet {
         request.setAttribute("beatModel", beatModel);
 
         RequestDispatcher dispatcher =
-                request.getRequestDispatcher("/djview.jsp");
+                request.getRequestDispatcher("djview.jsp");
         dispatcher.forward(request, response);
 
     }
