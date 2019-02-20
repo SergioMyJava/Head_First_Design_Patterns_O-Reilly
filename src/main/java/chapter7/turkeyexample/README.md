@@ -1,7 +1,7 @@
 Адаптер преобразует интерфейс класса к другому интерфейсу, на который рассчитан клиент. Адаптер
 обеспечивает совместную работу классов, невозможную в обычных условиях из-за несовместимости интерфейсов.
 
-![изображение image6](https://github.com/SergioMyJava/Head-First/blob/master/src/main/java/chapter7/turkeexample.jpg)
+![изображение image7](https://github.com/SergioMyJava/Head-First/blob/master/src/main/java/chapter7/turkeexample.jpg)
 
 Задача :
 Адаптировать методы класса Turkey к методам класса Duck.

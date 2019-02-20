@@ -18,7 +18,7 @@ Head First Patterns Summary
     - 7.3 [Пример с Iterator.](https://github.com/SergioMyJava/Head-First/tree/master/src/main/java/chapter7/enumerationtoiterator)
 
 - 8 глава.[Паттерн Шаблонный Метод(Template method)](https://github.com/SergioMyJava/Head-First/tree/master/src/main/java/chapter8)
-    - 8.1 [Пример с чаем и кофе](https://github.com/SergioMyJava/Head-First/tree/master/src/main/java/chapter8/CaffeineBeverage)
+    - 8.1 [Пример с чаем и кофе](https://github.com/SergioMyJava/Head-First/tree/master/src/main/java/chapter8/caffeinebeverage)
     - 8.2 [JFrame.print() перехватчик. Пример переопределения.](https://github.com/SergioMyJava/Head-First/tree/master/src/main/java/chapter8/jframeaxample)
     - 8.3 [Пример с сортировкой Ducks](https://github.com/SergioMyJava/Head-First/tree/master/src/main/java/chapter8/sortducks)
 - 9 глава.[Паттерны Итератор и Компоновщик](https://github.com/SergioMyJava/Head-First/tree/master/src/main/java/chapter9)
