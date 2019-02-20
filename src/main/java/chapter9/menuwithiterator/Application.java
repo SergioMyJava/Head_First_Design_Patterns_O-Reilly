@@ -1,4 +1,4 @@
-package chapter9;
+package chapter9.menuwithiterator;
 
 import chapter9.menuwithiterator.*;
 
@@ -18,6 +18,6 @@ public class Application {
         Waitress nill = new Waitress(menu);
         nill.printMenu();
 
-        ArrayList list = new ArrayList();
+        //ArrayList list = new ArrayList();
     }
 }

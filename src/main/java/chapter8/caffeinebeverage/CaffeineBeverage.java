@@ -1,4 +1,4 @@
-package chapter8.CaffeineBeverage;
+package chapter8.caffeinebeverage;
 
 public abstract class CaffeineBeverage {
 

@@ -1,10 +1,7 @@
 package chapter8;
 
-import chapter8.CaffeineBeverage.Coffee;
-import chapter8.CaffeineBeverage.Tea;
-import chapter8.SortDucks.Duck;
+import chapter8.sortducks.Duck;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 

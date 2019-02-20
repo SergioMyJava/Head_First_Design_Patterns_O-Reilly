@@ -1,4 +1,4 @@
-package chapter8.SortDucks;
+package chapter8.sortducks;
 
 public class Duck implements Comparable{
     String name;

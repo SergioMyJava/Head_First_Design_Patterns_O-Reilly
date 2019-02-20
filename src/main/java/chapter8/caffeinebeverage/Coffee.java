@@ -1,4 +1,4 @@
-package chapter8.CaffeineBeverage;
+package chapter8.caffeinebeverage;
 
 import java.io.BufferedReader;
 import java.io.IOException;
